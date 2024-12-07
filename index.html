@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forex Trading</title>
+    <style>
+      img {
+        max-width: 100%;
+      }
+      body {
+        background: #c7d6ef;
+      }
+      h1 {
+        text-align: center;
+        font-family: sans-serif, helvetica, Arial;
+        font-size: 35px;
+      }
+      h2 {
+        text-align: center;
+        color: #eb7739;
+        font-family: sans-serif, helvetica, Arial;
+      }
+      .dark-theme-button {
+        display: block;
+        margin: 20px auto;
+        background: black;
+        color: white;
+      }
+      .dark-theme-button:hover {
+        background: white;
+        color: black;
+        cursor: pointer;
+      }
+      .container {
+        background: white;
+        padding: 25px;
+        margin: 0 auto;
+        max-width: 800px;
+        border-radius: 8px;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #9cbbea;
+        background: white;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        background: #4d8ceb;
+        color: white;
+      }
+      footer {
+        text-align: center;
+        font-size: 15px;
+        margin: 10px 0;
+        font-family: monospace;
+      }
+      .forex-first-picture {
+        border-radius: 6px;
+        transition: all 150ms ease-in-out;
+      }
+      .forex-first-picture:hover {
+        transform: scale(1.1);
+        filter: contrast(85%);
+        margin: 15px 0;
+      }
+      p {
+        font-family: sans-serif, helvetica, Arial;
+        line-height: 1.8;
+        text-align: justify;
+        font-size: 15px;
+      }
+      a {
+        color: #eb7739;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+        margin: 10px 0;
+      }
+      .grid img {
+        border-radius: 4px;
+        transition: all 150ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.5);
+      }
+      .dark {
+        background: #000e23;
+        color: white;
+      }
+      .dark .container {
+        background: rgba(255, 255, 255, 0.1);
+      }
+      .dark a {
+        color: #eb7739;
+      }
+      .dark button {
+        background: black;
+        color: white;
+        border: none;
+      }
+      .dark .dark-theme-button {
+        background: white;
+        color: #000e23;
+      }
+      .leran-more {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #9cbbea;
+        background: white;
+        font-size: 16px;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+      .dark .leran-more {
+        background: white;
+        color: #000e23;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="dark-theme-button">Change theme</button>
+    <div class="container">
+      <h1>Forex Trading</h1>
+      <h2>Forex Trading Made Easy</h2>
+      <a
+        href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp"
+        target="_blank"
+      >
+        <img
+          src="https://res.cloudinary.com/dtixi0qhf/image/upload/v1726353530/piggybank-Dnc7dDN9GiA-unsplash_e1ihco.jpg"
+          alt=""
+          class="forex-first-picture"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://res.cloudinary.com/dtixi0qhf/image/upload/v1726353531/piggybank-wdVKiG9JpKM-unsplash_db78d5.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dtixi0qhf/image/upload/v1726353530/marga-santoso-OmPqCwX422Y-unsplash_q0ok6o.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dtixi0qhf/image/upload/v1726353532/piggybank-OYn37WDIu_k-unsplash_edgbq4.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dtixi0qhf/image/upload/v1726353535/joshua-mayo-MCIm2A6hLXs-unsplash_uhehts.jpg"
+          alt=""
+        />
+      </div>
+      <p>
+        Trading the foreign exchange market is extremely risky but here is a
+        basic knowledge of what forex is: Foreign exchange (forex or FX) trading
+        involves buying one currency and selling another while attempting to
+        profit from the trade. According to the latest reliable data, global
+        daily trading in 2022 was $7.5 trillion, making forex the largest
+        financial market in the world, dwarfing even the global stock market.1
+        Trading currencies online has become far more accessible in the last
+        decade, attracting droves of newer traders wanting a piece of the
+        action...<a
+          href="https://www.investopedia.com/articles/forex/11/why-trade-forex.asp"
+          target="_blank"
+          ><em>Continue reading</em></a
+        >
+      </p>
+      <button class="leran-more">Learn More</button>
+    </div>
+    <footer>Coded by Fetty👩‍💻 © 2024</footer>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector(".dark-theme-button");
+      themeButton.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
